@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Five</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4ced73037e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,30 +23,133 @@
         </div>
     </header>
     <main>
-        <section class="m-10">
-            <div>
-                <div id="card-hover-random-color"
-                    class="border-solid border-2 border-indigo-100 p-2 text-center rounded-lg">
-                    <div class="flex justify-center">
-                        <img class="w-9/12" src="images/triangle.png" alt="" srcset="">
+        <section class="my-10 mx-4">
+            <div class="flex gap-2 flex-col lg:flex-row md:flex-row ">
+                <div class="grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[75%] md:w-[75%] grid-cols-1">
+                    <div id="card-hover-random-color"
+                        class="border-solid border-2 border-indigo-100 p-2 text-center rounded-lg card-hover-random-color-c">
+                        <div class="flex justify-center">
+                            <img class="w-9/12 h-48 mt-4" src="images/triangle.png" alt="" srcset="">
+                        </div>
+                        <h3 id="triangle-text" class="mt-6 font-semibold">Triangle</h3>
+                        <p class="mt-2">Area (A) = 0.5 x b x h</p>
+                        <div class="flex items-center justify-center">
+                            <input id="triangle-b-input" class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text"
+                                placeholder="b">
+                            <span class="mx-1">cm</span>
+                            <input id="triangle-h-input" class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text"
+                                placeholder="h">
+                            <span class="mx-1">cm</span>
+                        </div>
+                        <button id="triangle-calcutale-btn"
+                            class="text-1xl text-white my-4 px-10 py-2 bg-blue-600 rounded-lg hover:bg-blue-400">Calculate</button>
                     </div>
-                    <h3 class="mt-6">Triangle</h3>
-                    <p class="mt-2">Area (A) = 0.5 x b x h</p>
-                    <div class="flex items-center justify-center">
-                        <input class="w-14 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="b">
-                        <span class="mx-1">cm</span>
-                        <input class="w-14 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="h">
-                        <span class="mx-1">cm</span>
+                    <div id="card-hover-random-color"
+                        class="border-solid border-2 border-indigo-100 p-2 text-center rounded-lg">
+                        <div class="flex justify-center">
+                            <img class="w-9/12 h-48 mt-4" src="images/rectangle.png" alt="" srcset="">
+                        </div>
+                        <h3 class="mt-6 font-semibold">Rectangle</h3>
+                        <p class="mt-2">Area (A) = w x l</p>
+                        <div class="flex items-center justify-center">
+                            <input class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="w">
+                            <span class="mx-1">cm</span>
+                            <input class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="l">
+                            <span class="mx-1">cm</span>
+                        </div>
+                        <button
+                            class="text-1xl text-white my-4 px-10 py-2 bg-blue-600 rounded-lg hover:bg-blue-400">Calculate</button>
                     </div>
-                    <button
-                        class="text-1xl text-white mt-4 px-12 py-2 bg-blue-600 rounded-lg hover:bg-blue-400">Calculate</button>
+                    <div id="card-hover-random-color"
+                        class="border-solid border-2 border-indigo-100 p-2 text-center rounded-lg">
+                        <div class="flex justify-center">
+                            <img class="w-9/12 h-48 mt-4" src="images/parallelogram.png" alt="" srcset="">
+                        </div>
+                        <h3 class="mt-6 font-semibold">Parallelogram</h3>
+                        <p class="mt-2">Area (A) = b x h</p>
+                        <div class="flex items-center justify-center">
+                            <input class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="b">
+                            <span class="mx-1">cm</span>
+                            <input class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="h">
+                            <span class="mx-1">cm</span>
+                        </div>
+                        <button
+                            class="text-1xl text-white my-4 px-10 py-2 bg-blue-600 rounded-lg hover:bg-blue-400">Calculate</button>
+                    </div>
+                    <div id="card-hover-random-color"
+                        class="border-solid border-2 border-indigo-100 p-2 text-center rounded-lg">
+                        <div class="flex justify-center">
+                            <img class="w-9/12 h-48 mt-4" src="images/rhombus.png" alt="" srcset="">
+                        </div>
+                        <h3 class="mt-6 font-semibold">Rhombus</h3>
+                        <p class="mt-2">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <div class="flex items-center justify-center">
+                            <input class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="d1">
+                            <span class="mx-1">cm</span>
+                            <input class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="d2">
+                            <span class="mx-1">cm</span>
+                        </div>
+                        <button
+                            class="text-1xl text-white my-4 px-10 py-2 bg-blue-600 rounded-lg hover:bg-blue-400">Calculate</button>
+                    </div>
+                    <div id="card-hover-random-color"
+                        class="border-solid border-2 border-indigo-100 p-2 text-center rounded-lg">
+                        <div class="flex justify-center">
+                            <img class="w-9/12 h-48 mt-4" src="images/pentagon.png" alt="" srcset="">
+                        </div>
+                        <h3 class="mt-6 font-semibold">Pentagon</h3>
+                        <p class="mt-2">Area (A) = 0.5 x p x b</p>
+                        <div class="flex items-center justify-center">
+                            <input class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="p">
+                            <span class="mx-1">cm</span>
+                            <input class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="b">
+                            <span class="mx-1">cm</span>
+                        </div>
+                        <button
+                            class="text-1xl text-white my-4 px-10 py-2 bg-blue-600 rounded-lg hover:bg-blue-400">Calculate</button>
+                    </div>
+                    <div id="card-hover-random-color"
+                        class="border-solid border-2 border-indigo-100 p-2 text-center rounded-lg">
+                        <div class="flex justify-center">
+                            <img class="w-9/12 h-48 mt-4" src="images/ellipse.png" alt="" srcset="">
+                        </div>
+                        <h3 class="mt-6 font-semibold">Pentagon</h3>
+                        <p class="mt-2">Area (A) = 3.14 x ab</p>
+                        <div class="flex items-center justify-center">
+                            <input class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="b">
+                            <span class="mx-1">cm</span>
+                            <input class="w-12 px-2 mt-2 py-1 bg-cyan-100 rounded" type="text" placeholder="h">
+                            <span class="mx-1">cm</span>
+                        </div>
+                        <button
+                            class="text-1xl text-white my-4 px-10 py-2 bg-blue-600 rounded-lg hover:bg-blue-400">Calculate</button>
+                    </div>
+                </div>
+
+                <div class="border-solid border-2 border-indigo-100 p-2  rounded-lg w-[25%] mx-auto">
+                    <h3 class="mt-6 text-center font-semibold underline underline-offset-4">Area Calculation</h3>
+                    <ol id="add-calculation-value" class="list-decimal list-inside">
+                        
+                    </ol>
+                    <!-- <table class="table w-full">
+                        <tbody id="add-calculation-value">
+                            <tr>
+                                <td>a</td>
+                                <td>c</td>
+                                <td>d</td>
+                            </tr>
+                        </tbody>
+                    </table> -->
                 </div>
             </div>
 
         </section>
 
     </main>
+    <script src="js/utility.js"></script>
     <script src="js/card-hover-random-color.js"></script>
+    <script src="js/area-calculate.js"></script>
+    <script src="js/calculate.js"></script>
 </body>
 
 </html>
