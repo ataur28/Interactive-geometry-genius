@@ -33,5 +33,33 @@ document.getElementById('triangle-calcutale-btn').addEventListener('click', func
 
 });
 
+// Rectangle
+document.getElementById('rectangle-calculate-btn').addEventListener('click', function () {
+    const rectangleWValue = inputFieldValue('rectangle-w-input');
+    const rectanglelValue = inputFieldValue('rectangle-l-input');
 
+    const area = rectangleWValue * rectanglelValue;
+    console.log(area);
+
+    const rectangleText = textFieldValue('rectangle-text');
+    console.log(rectangleText);
+
+    areaCalcutation(rectangleText,area);
+
+});
+
+// Parallelogram
+document.getElementById('parallelogram-calculate-btn').addEventListener('click', function () {
+    const parallelogramBValue = inputFieldValue('parallelogram-b-input');
+    const parallelogramHValue = inputFieldValue('parallelogram-h-input');
+
+    const area = parallelogramBValue * parallelogramHValue;
+    console.log(area);
+
+    const parallelogramText = textFieldValue('parallelogram-text');
+    console.log(parallelogramText);
+
+    areaCalcutation(parallelogramText,area);
+
+});
 
