@@ -14,6 +14,7 @@ function textFieldValue(textId){
 
 const container = document.getElementById('add-calculation-value');
 function areaCalcutation(shapeName, shepArea){
+    const gap = '';
     const li = document.createElement("li");
     li.innerHTML= `
     <td style="margin-right: 10px; margin-top: 10px">${shapeName}</td>
