@@ -84,4 +84,18 @@ document.getElementById('pentagon-calculate-btn').addEventListener('click', func
 
 });
 
+//Ellipse
+document.getElementById('ellipse-calculate-btn').addEventListener('click', function () {
+    const ellipseAValue = inputFieldValue('ellipse-a-input');
+    const ellipseBValue = inputFieldValue('ellipse-b-input');
+
+    const area = 3.14 * ellipseAValue * ellipseBValue ;
+
+    const ellipseText = textFieldValue('ellipse-text');
+   
+    areaCalcutation(ellipseText,area);
+
+});
+
+
 

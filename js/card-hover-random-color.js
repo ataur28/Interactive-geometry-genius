@@ -5,7 +5,7 @@ function randomColor() {
     }
     return 'rgb(' + color.join(', ') + ')';
 }
-
+//Triangle
 document.getElementById('card-hover-random-color').addEventListener('mouseover', event => {
     const hoverColor = document.getElementById('card-hover-random-color');
     hoverColor.style.backgroundColor = randomColor();
@@ -15,3 +15,13 @@ document.getElementById('card-hover-random-color').addEventListener('mouseout', 
     const hoverColor = document.getElementById('card-hover-random-color');
     hoverColor.style.backgroundColor = '';
 });
+
+// Rectangle
+
+// Parallelogram
+
+// Rhombus
+
+// Pentagon
+
+// Ellipse
