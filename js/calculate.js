@@ -4,10 +4,8 @@ document.getElementById('triangle-calcutale-btn').addEventListener('click', func
     const triangleHValue = inputFieldValue('triangle-h-input');
 
     const area = 0.5 * triangleBValue * triangleHValue;
-    console.log(area);
 
     const triangleText = textFieldValue('triangle-text');
-    console.log(triangleText);
 
 
     // const container = document.getElementById('add-calculation-value');
@@ -39,10 +37,8 @@ document.getElementById('rectangle-calculate-btn').addEventListener('click', fun
     const rectanglelValue = inputFieldValue('rectangle-l-input');
 
     const area = rectangleWValue * rectanglelValue;
-    console.log(area);
 
     const rectangleText = textFieldValue('rectangle-text');
-    console.log(rectangleText);
 
     areaCalcutation(rectangleText,area);
 
@@ -54,12 +50,25 @@ document.getElementById('parallelogram-calculate-btn').addEventListener('click',
     const parallelogramHValue = inputFieldValue('parallelogram-h-input');
 
     const area = parallelogramBValue * parallelogramHValue;
-    console.log(area);
 
     const parallelogramText = textFieldValue('parallelogram-text');
-    console.log(parallelogramText);
 
     areaCalcutation(parallelogramText,area);
 
 });
+
+//Rhombus
+
+document.getElementById('rhombus-calculate-btn').addEventListener('click', function () {
+    const rhombusD1Value = inputFieldValue('rhombus-d1-input');
+    const rhombusD2Value = inputFieldValue('rhombus-d2-input');
+
+    const area = 0.5* rhombusD1Value * rhombusD2Value ;
+
+    const rhombusText = textFieldValue('rhombus-text');
+   
+    areaCalcutation(rhombusText,area);
+
+});
+
 
