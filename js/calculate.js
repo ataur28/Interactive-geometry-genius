@@ -12,7 +12,9 @@ document.getElementById('triangle-calcutale-btn').addEventListener('click', func
         return;
     }
 
-    const area = 0.5 * triangleBValue * triangleHValue;
+    const shapeArea = 0.5 * triangleBValue * triangleHValue;
+    const area = shapeArea.toFixed(2);
+
 
     const triangleText = textFieldValue('triangle-text');
 
@@ -54,7 +56,8 @@ document.getElementById('rectangle-calculate-btn').addEventListener('click', fun
         return;
     }
 
-    const area = rectangleWValue * rectanglelValue;
+    const shapeArea = rectangleWValue * rectanglelValue;
+    const area = shapeArea.toFixed(2);
 
     const rectangleText = textFieldValue('rectangle-text');
 
@@ -76,7 +79,8 @@ document.getElementById('parallelogram-calculate-btn').addEventListener('click',
         return;
     }
 
-    const area = parallelogramBValue * parallelogramHValue;
+    const shapeArea = parallelogramBValue * parallelogramHValue;
+    const area = shapeArea.toFixed(2);
 
     const parallelogramText = textFieldValue('parallelogram-text');
 
@@ -99,7 +103,8 @@ document.getElementById('rhombus-calculate-btn').addEventListener('click', funct
         return;
     }
 
-    const area = 0.5* rhombusD1Value * rhombusD2Value ;
+    const shapeArea = 0.5* rhombusD1Value * rhombusD2Value ;
+    const area = shapeArea.toFixed(2);
 
     const rhombusText = textFieldValue('rhombus-text');
    
@@ -121,7 +126,8 @@ document.getElementById('pentagon-calculate-btn').addEventListener('click', func
         return;
     }
 
-    const area = 0.5* pentagonPValue * pentagonBValue ;
+    const shapeArea = 0.5* pentagonPValue * pentagonBValue ;
+    const area = shapeArea.toFixed(2);
 
     const pentagonText = textFieldValue('pentagon-text');
    
@@ -143,7 +149,9 @@ document.getElementById('ellipse-calculate-btn').addEventListener('click', funct
         return;
     }
 
-    const area = 3.14 * ellipseAValue * ellipseBValue ;
+    const shapeArea = 3.14 * ellipseAValue * ellipseBValue ;
+    const area = shapeArea.toFixed(2);
+    
 
     const ellipseText = textFieldValue('ellipse-text');
    
